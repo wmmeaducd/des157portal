@@ -1,0 +1,71 @@
+body {
+    font-family: 'Khand', sans-serif;
+    font-weight: 300;
+    color: #333;
+    background: #AB5211;
+    font-size: 1.2em;
+}
+
+#page {
+    background: url(images/papercloseup-small.jpg);
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4em 0 2em 0;
+}
+
+h1, h2 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 400;
+    color: #1A4C61;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 0.5em 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    height: 1.8em;
+    line-height: 1.8em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 50px;
+}
+
+footer a {
+    color: #92CAE0;
+    text-decoration: none;
+}
