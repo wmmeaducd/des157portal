@@ -17,6 +17,8 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 4em 0 2em 0;
+    position: relative;
+    z-index: 20;
 }
 
 h1, h2 {
@@ -48,6 +50,12 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #333;
+    transition: font-size 500ms ease, color 500ms ease;
+}
+
+ul li a:hover {
+    font-size: 1.2em;
+    color: #c82430;
 }
 
 main {
@@ -56,6 +64,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    position: relative;
+    z-index: 20;
 }
 
 footer {
@@ -68,4 +78,95 @@ footer {
 footer a {
     color: #92CAE0;
     text-decoration: none;
+}
+
+/* Splatter rules */
+
+#splatters {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#splatters > img {
+    position: absolute;
+}
+
+#splatters div img {
+    position: absolute;
+    bottom: -10px;
+    transform: translateX(-4px);
+    width: 15px;
+}
+
+#splatter1 {
+    top: 0;
+    right: 0;
+    width: 30%;
+    z-index: 1;
+}
+
+#splatter4 {
+    top: -3em;
+    left: -3em;
+    width: 70%;
+}
+
+#splatter3 {
+    top: -5em;
+    left: 50%;
+    width: 60%;
+}
+
+#splatter2 {
+    top: -5em;
+    left: 15%;
+    width: 60%;
+    z-index: 2;
+}
+
+#green-drip {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    background-color: #C6D7AB;
+    width: 8px;
+    height: 0;
+    animation: drip1 5s ease-in-out 5s forwards;
+}
+
+#red-drip {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    background-color: #c82430;
+    width: 8px;
+    height: 0;
+    animation: drip2 10s ease-in-out 3s forwards;
+}
+
+#blue-drip {
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    background-color: #91cae1;
+    width: 8px;
+    height: 0;
+    animation: drip3 6s ease-in-out 7s forwards;
+}
+
+@keyframes drip1 {
+    from { height: 0;}
+    to { height: 375px;}
+}
+
+@keyframes drip2 {
+    from { height: 0;}
+    to { height: 500px;}
+}
+
+@keyframes drip3 {
+    from { height: 0;}
+    to { height: 305px;}
 }
